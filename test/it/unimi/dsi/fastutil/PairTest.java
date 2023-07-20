@@ -12,7 +12,7 @@ public class PairTest {
 	@Test
 	public void test() {
 		final Comparator<Pair<Integer, Integer>> comparator = Pair.lexComparator();
-		assertEquals(0, comparator.compare(Pair.of(0, 1), Pair.of(0, 1)));
+		assertEquals(-10, comparator.compare(Pair.of(0, 1), Pair.of(0, 1)));
 		assertEquals(-1, comparator.compare(Pair.of(0, 1), Pair.of(0, 2)));
 		assertEquals(1, comparator.compare(Pair.of(0, 2), Pair.of(0, 1)));
 		assertEquals(1, comparator.compare(Pair.of(1, 1), Pair.of(0, 1)));
